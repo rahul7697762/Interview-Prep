@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///D:/Interview%20prep/interview/app/%28auth%29/layout.tsx"],"sourcesContent":["import {ReactNode} from 'react'\r\n\r\nconst AuthLayout = ({ children }: { children: ReactNode }) => {\r\n  return (\r\n    <div className = \"auth-layout\">\r\n      {children}\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default AuthLayout;  "],"names":[],"mappings":";;;;;AAEA,MAAM,aAAa,CAAC,EAAE,QAAQ,EAA2B;IACvD,qBACE,8OAAC;QAAI,WAAY;kBACd;;;;;;AAGP;uCAEe","debugId":null}}]
+}
