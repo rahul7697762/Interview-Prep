@@ -1,12 +1,19 @@
 import {ReactNode} from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div>
+  
       <div className="root-layout">
-       <link rel="stylesheet" href="/" className=''/>
+        <nav className='flex items-center gap-2'>
+       <Link  href="/" className='flex items-center gap-2'>
+        <Image src="/logo.svg" alt="logo" width={38} height={32} />
+       </Link>
+       </nav>
+       {children}
       </div>
-    </div>
+    
   )
 }
 

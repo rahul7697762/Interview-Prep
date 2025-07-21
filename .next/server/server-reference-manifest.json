@@ -1,5 +1,61 @@
 {
-  "node": {},
+  "node": {
+    "40046bf4a82b25b53e152c625fbea6c6684fb380d5": {
+      "workers": {
+        "app/(root)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(root)/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/general.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(root)/page": "rsc"
+      }
+    },
+    "401f6bd5c12f7823242d45dfad3553827c49cd6820": {
+      "workers": {
+        "app/(root)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(root)/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/general.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(root)/page": "rsc"
+      }
+    },
+    "403325543fb61d5b594255391089633dc0a4d846c1": {
+      "workers": {
+        "app/(root)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(root)/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/general.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(root)/page": "rsc"
+      }
+    },
+    "40434c25370dfc10face39e7cc2a28fe481509a721": {
+      "workers": {
+        "app/(root)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(root)/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/general.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(root)/page": "rsc"
+      }
+    },
+    "40df99c886ee495afe0ea27f8b255583f82cf919fc": {
+      "workers": {
+        "app/(root)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(root)/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/general.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(root)/page": "rsc"
+      }
+    }
+  },
   "edge": {},
   "encryptionKey": "rjL7aQ27i6+HMMvuwCxzPQpCXbHXXJEiJ7XFVQmJJe8="
 }
