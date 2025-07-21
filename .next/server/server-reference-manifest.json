@@ -54,6 +54,72 @@
       "layer": {
         "app/(root)/page": "rsc"
       }
+    },
+    "000fffdaf96e1641cefdc62a63d0f6f4d566a757b8": {
+      "workers": {
+        "app/(auth)/sign-in/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/sign-in/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/auth.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(auth)/sign-in/page": "rsc"
+      }
+    },
+    "00aea75a2b0facc6a2a5224797c098e7d11ec560f6": {
+      "workers": {
+        "app/(auth)/sign-in/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/sign-in/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/auth.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(auth)/sign-in/page": "rsc"
+      }
+    },
+    "00c299aed380f80c1adced8ddd71a31903ed652dd0": {
+      "workers": {
+        "app/(auth)/sign-in/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/sign-in/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/auth.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(auth)/sign-in/page": "rsc"
+      }
+    },
+    "400ed6455fef55721e1285cba2a22670098c7027df": {
+      "workers": {
+        "app/(auth)/sign-in/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/sign-in/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/auth.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(auth)/sign-in/page": "rsc"
+      }
+    },
+    "401fc6f7b6e0da466f0ebd4903b113079ef70fb1d5": {
+      "workers": {
+        "app/(auth)/sign-in/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/sign-in/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/auth.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(auth)/sign-in/page": "rsc"
+      }
+    },
+    "40b7053ed67644e300635a90b1b12b982fa6469e7e": {
+      "workers": {
+        "app/(auth)/sign-in/page": {
+          "moduleId": "[project]/.next-internal/server/app/(auth)/sign-in/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions/auth.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(auth)/sign-in/page": "rsc"
+      }
     }
   },
   "edge": {},
