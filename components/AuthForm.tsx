@@ -14,7 +14,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 
-import { Form } from "@/components/form";
+import { Form } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 
 import { signIn, signUp } from "@/lib/actions/auth.action";

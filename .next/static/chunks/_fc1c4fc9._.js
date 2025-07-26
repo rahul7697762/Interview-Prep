@@ -545,7 +545,9 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 const formSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v3$2f$external$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
-    username: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v3$2f$external$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(2).max(50)
+    name: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v3$2f$external$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(2).max(50).optional(),
+    email: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v3$2f$external$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().email(),
+    password: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v3$2f$external$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(6)
 });
 const AuthForm = ({ type })=>{
     _s();
@@ -553,13 +555,15 @@ const AuthForm = ({ type })=>{
     const form = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"])({
         resolver: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["zodResolver"])(formSchema),
         defaultValues: {
-            username: ""
+            name: "",
+            email: "",
+            password: ""
         }
     });
     // 2. Define a submit handler.
     function onSubmit(values) {
         // Do something with the form values.
-        // ✅ This will be type-safe and validated.
+        //  This will be type-safe and validated.
         console.log(values);
     }
     const isSignIn = type === 'sign-in';
@@ -578,7 +582,7 @@ const AuthForm = ({ type })=>{
                             height: 38
                         }, void 0, false, {
                             fileName: "[project]/app/components/AuthForm.tsx",
-                            lineNumber: 55,
+                            lineNumber: 61,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -586,20 +590,20 @@ const AuthForm = ({ type })=>{
                             children: "PrepWise"
                         }, void 0, false, {
                             fileName: "[project]/app/components/AuthForm.tsx",
-                            lineNumber: 56,
+                            lineNumber: 62,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/AuthForm.tsx",
-                    lineNumber: 54,
+                    lineNumber: 60,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     children: " Practice job Interview with AI"
                 }, void 0, false, {
                     fileName: "[project]/app/components/AuthForm.tsx",
-                    lineNumber: 61,
+                    lineNumber: 67,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Form"], {
@@ -608,25 +612,37 @@ const AuthForm = ({ type })=>{
                         onSubmit: form.handleSubmit(onSubmit),
                         className: "w-full space-y-6 mt-4 form",
                         children: [
-                            !isSignIn && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Name "
+                            !isSignIn && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
+                                control: form.control,
+                                name: "name",
+                                label: "Name",
+                                placeholder: "Enter your name",
+                                type: "text"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/AuthForm.tsx",
-                                lineNumber: 66,
-                                columnNumber: 23
+                                lineNumber: 73,
+                                columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Email"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
+                                control: form.control,
+                                name: "email",
+                                label: "Email",
+                                placeholder: "Enter your email",
+                                type: "email"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/AuthForm.tsx",
-                                lineNumber: 67,
+                                lineNumber: 81,
                                 columnNumber: 9
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Password"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
+                                control: form.control,
+                                name: "password",
+                                label: "Password",
+                                placeholder: "Enter your password",
+                                type: "password"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/AuthForm.tsx",
-                                lineNumber: 68,
+                                lineNumber: 88,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -635,18 +651,18 @@ const AuthForm = ({ type })=>{
                                 children: isSignIn ? 'Sign in' : 'Create An Account'
                             }, void 0, false, {
                                 fileName: "[project]/app/components/AuthForm.tsx",
-                                lineNumber: 69,
+                                lineNumber: 95,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/AuthForm.tsx",
-                        lineNumber: 65,
+                        lineNumber: 71,
                         columnNumber: 7
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/AuthForm.tsx",
-                    lineNumber: 64,
+                    lineNumber: 70,
                     columnNumber: 14
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -659,24 +675,24 @@ const AuthForm = ({ type })=>{
                             children: !isSignIn ? "Sign in" : "Sign up"
                         }, void 0, false, {
                             fileName: "[project]/app/components/AuthForm.tsx",
-                            lineNumber: 74,
+                            lineNumber: 100,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/AuthForm.tsx",
-                    lineNumber: 72,
+                    lineNumber: 98,
                     columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/AuthForm.tsx",
-            lineNumber: 53,
+            lineNumber: 59,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/AuthForm.tsx",
-        lineNumber: 52,
+        lineNumber: 58,
         columnNumber: 9
     }, this);
 };

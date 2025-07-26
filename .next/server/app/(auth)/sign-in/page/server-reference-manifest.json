@@ -52,7 +52,7 @@
         }
       },
       "layer": {
-        "app/(auth)/sign-in/page": "rsc"
+        "app/(auth)/sign-in/page": "action-browser"
       }
     },
     "40b7053ed67644e300635a90b1b12b982fa6469e7e": {
@@ -63,7 +63,7 @@
         }
       },
       "layer": {
-        "app/(auth)/sign-in/page": "rsc"
+        "app/(auth)/sign-in/page": "action-browser"
       }
     }
   },
