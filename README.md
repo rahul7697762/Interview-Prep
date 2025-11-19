@@ -91,8 +91,7 @@ FIREBASE_CLIENT_EMAIL=your_firebase_client_email
 VAPI_API_KEY=your_vapi_api_key
 VAPI_PUBLIC_KEY=your_vapi_public_key
 
-# OpenAI Configuration
-OPENAI_API_KEY=your_openai_api_key
+
 
 # Deepgram Configuration
 DEEPGRAM_API_KEY=your_deepgram_api_key
@@ -210,3 +209,4 @@ If you encounter any issues or have questions:
 ---
 
 **PrepWise** - Your AI-powered interview preparation companion 🚀
+
